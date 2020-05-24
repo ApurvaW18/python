@@ -13,14 +13,17 @@ some of which are 1634, 8208, 9474 since
 8208 = 84+24+04+84
 9474 = 94+44+74+44
 '''
-n=input("enter number:")
+n=(input())
 s=0
-t=n
-for i in n:
-    a=int(i)**len(n)
+q=len(n)
+t=int(n)
+for i in range(q):
+    a=int(n[i])**len((n))
     s=s+a
-if (t==s):
-    print("number is narcissistic",s)
+    
+if t==s:
+     print("number is narcissistic",s)
+        #break
 else:
     print("number is not narcissistic",s)
     
